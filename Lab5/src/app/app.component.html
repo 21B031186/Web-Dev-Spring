@@ -1,0 +1,17 @@
+<app-top-bar></app-top-bar>
+<select [(ngModel)]="cat" (ngModelChange)="toCat()">
+  <option value="1">Smart Phones</option>
+  <option value="2">Laptops</option>
+  <option value="3">Smart TV</option>
+  <option value="4">Tablets</option>
+</select>
+<div class="container" >
+
+  <!-- <router-outlet></router-outlet> -->
+  <app-product-list [cat]="cat"></app-product-list>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
